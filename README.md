@@ -1,6 +1,6 @@
 # Introduction
 
-This repository presents a VHDL-based neural network accelerator for atrous convolution. The accelerator is intended as a demonstration accelerator for atrous convolution with dynamic sparsity. For more information see the thesis contained in the repository.
+This repository presents a VHDL-based neural network accelerator for atrous convolution. The accelerator is intended as a demonstration accelerator for atrous convolution with dynamic sparsity. For more information see the thesis contained in the repository. The output data from the fpga can be downloaded here: https://drive.google.com/file/d/1a3uyqQnyPQJ8WL4JJ-ioAksY3RZSXt8L/view?usp=sharing 
 
 # Running the accelerator
 
