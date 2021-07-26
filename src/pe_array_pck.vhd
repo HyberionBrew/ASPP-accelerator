@@ -1,0 +1,40 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+USE ieee.numeric_std.ALL;
+USE work.core_pck.ALL;
+USE work.pe_pack.ALL;
+
+PACKAGE pe_array_pck IS
+	TYPE std_logic_array IS ARRAY(0 TO PE_COLUMNS - 1, 0 TO PARALLEL_OFMS - 1) OF STD_LOGIC;
+	FUNCTION AND_REDUCE_COL_ROWS(v : std_logic_array) RETURN STD_LOGIC;
+	FUNCTION OR_REDUCE_COL_ROWS(v : std_logic_array) RETURN STD_LOGIC;
+
+END PACKAGE;
+
+PACKAGE BODY pe_array_pck IS
+
+	FUNCTION AND_REDUCE_COL_ROWS(v : std_logic_array) RETURN STD_LOGIC IS
+	BEGIN
+		FOR I IN 0 TO PE_COLUMNS - 1 LOOP
+			FOR J IN 0 TO PARALLEL_OFMS - 1 LOOP
+				IF v(I, J) = '0' THEN
+					RETURN '0';
+				END IF;
+			END LOOP;
+		END LOOP;
+		RETURN '1';
+	END FUNCTION;
+
+	FUNCTION OR_REDUCE_COL_ROWS(v : std_logic_array) RETURN STD_LOGIC IS
+	BEGIN
+		FOR I IN 0 TO PE_COLUMNS - 1 LOOP
+			FOR J IN 0 TO PARALLEL_OFMS - 1 LOOP
+				IF v(I, J) = '1' THEN
+					RETURN '1';
+				END IF;
+			END LOOP;
+		END LOOP;
+		RETURN '0';
+	END FUNCTION;
+
+END PACKAGE BODY;

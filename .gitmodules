@@ -1,0 +1,3 @@
+[submodule "deeplabv3/DeepLabV3Plus-Pytorch"]
+	path = deeplabv3/DeepLabV3Plus-Pytorch
+	url = https://github.com/HyberionBrew/DeepLabV3Plus-Pytorch
