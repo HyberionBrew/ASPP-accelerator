@@ -1,0 +1,8 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+psums_buffer_tb	/home/fabian/Documents/Bachelorarbeit/VHDL_1x1/test_psums_buffer/tb/psum_buffer_tb.vhd	/^entity psums_buffer_tb is$/;"	entity	line:11
+CLK_PERIOD	/home/fabian/Documents/Bachelorarbeit/VHDL_1x1/test_psums_buffer/tb/psum_buffer_tb.vhd	/^  constant CLK_PERIOD : time := 20 ns;$/;"	constant	line:15
